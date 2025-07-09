@@ -17,6 +17,7 @@ This repo demonstrates how to:
 Create a `.env` file with:
 
 ```env
+
 NEO4J_URI=bolt://localhost:7687
 NEO4J_USERNAME=neo4j
 NEO4J_PASSWORD=your_password
@@ -31,6 +32,7 @@ pip install langchain langchain_groq neo4j python-dotenv
 
 
  LOAD CSV WITH HEADERS FROM
+
 'https://raw.githubusercontent.com/tomasonjo/blog-datasets/main/movies/movies_small.csv' AS row
 
 MERGE (m:Movie {id: row.movieId})
@@ -48,7 +50,7 @@ FOREACH (genre IN split(row.genres, '|') |
     MERGE (m)-[:IN_GENRE]->(g));
 
 
-    📝 Example Queries
+📝 Example Queries
 “Which movies did Leonardo DiCaprio act in?”
 
 “Show all genres with more than 10 movies.”
