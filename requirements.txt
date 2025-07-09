@@ -1,9 +1,15 @@
 neo4j==5.14
+
 langchain
+
 langchain_community
+
 langchain_openai
+
 langchain_groq
+
 python-dotenv
 
 neo4j
+
 neo4j==5.28.1

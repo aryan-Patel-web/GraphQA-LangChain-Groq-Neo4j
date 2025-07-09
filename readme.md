@@ -51,6 +51,7 @@ FOREACH (genre IN split(row.genres, '|') |
 
 
 📝 Example Queries
+
 “Which movies did Leonardo DiCaprio act in?”
 
 “Show all genres with more than 10 movies.”
